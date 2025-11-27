@@ -84,7 +84,7 @@ async def index(request: Request):
     return templates.TemplateResponse("register.html",
                                       {"request": request})
 
-
+# aasd
 
 
 
