@@ -20,9 +20,9 @@ app.mount("/static", StaticFiles(directory='app/static'), name="static")
 
 
 
-@app.get("/register", response_class=HTMLResponse)
+@app.get("/", response_class=HTMLResponse)
 async def index(request: Request):
-    return templates.TemplateResponse("register.html",
+    return templates.TemplateResponse("index.html",
                                       {"request": request})
 
 
@@ -79,9 +79,9 @@ async def index(request: Request):
                                       {"request": request})
 
 
-@app.get("/", response_class=HTMLResponse)
+@app.get("/register", response_class=HTMLResponse)
 async def index(request: Request):
-    return templates.TemplateResponse("index.html",
+    return templates.TemplateResponse("register.html",
                                       {"request": request})
 
 # aasd
