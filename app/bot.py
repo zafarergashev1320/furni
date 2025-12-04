@@ -16,7 +16,7 @@ dp = Dispatcher()
 
 @dp.message(Command("start"))
 async def send_message(message: types.Message):
-    await message.answer(text="Salom Alini botiga xush kelibsiz")
+    await message.answer(text="Sa")
 
 
 async def setup_webhook():
