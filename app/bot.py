@@ -5,7 +5,7 @@ env = Env()
 env.read_env()
 
 API_TOKEN = env.str("API_TOKEN")
-CHAT_ID = int(env.str("CHAT_ID"))  # ✅ integerga o‘tkazish
+CHAT_ID = env.str("CHAT_ID")
 
 bot = Bot(token=API_TOKEN)
 dp = Dispatcher()
