@@ -30,6 +30,11 @@ async def index(request: Request):
     return templates.TemplateResponse("index.html", {"request": request})
 
 
+@app.get("/register", response_class=HTMLResponse)
+async def index(request: Request):
+    return templates.TemplateResponse("register.html", {"request": request})
+
+
 @app.get("/{page_name}", response_class=HTMLResponse)
 async def pages(request: Request, page_name: str):
     # Masalan contact.html, about.html, shop.html
